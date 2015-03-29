@@ -10,6 +10,10 @@
         remote="origin"
         sync-j="4" />
 
+    <project path="tools" name="bazel_tools" groups="default">
+        <copyfile src="BAZEL-WORKSPACE" dest="WORKSPACE"/>
+    </project>
+
     <!-- Robot -->
     <project path="robot/Turing" name="Turing" groups="robot"/>
     <project path="robot/DiagRoboRIO" name="DiagRoboRIO" groups="robot"/>
